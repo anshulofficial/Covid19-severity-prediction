@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+{% include head.html %}
+{% include navigation.html %}
+{% include 00_about.html %}
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <section id="visualizations" class="container content-section text-center">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  {% include 01_visualizations.html %}
+              </div>
+          </div>
+    </section>
+    <section id="data" class="container content-section text-center">
+<!--          <div class="row">-->
+              <div class="col-lg-8 col-lg-offset-2" style="text-align: left">
+                  {% capture my_include %}{% include 02_data.md %}{% endcapture %}
+                  {{ my_include | markdownify }}
+              </div>
+<!--          </div>-->
+    </section>
+    <section id="models" class="container content-section text-center">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  {% capture my_include %}{% include 03_models.md %}{% endcapture %}
+                  {{ my_include | markdownify }}
+              </div>
+          </div>
+    </section>
+
+    <section id="our_team" class="container content-section text-center">
+        <h1> Our team </h1>
+        <img src="assets/group_photo.svg" style="width:100%;">
+        <p style="font-size: 25px; text-align: center;">Thanks to support from AWS and Google.</p>
+    </section>>
+
+{% include js.html %}
+
+
+</body>
+</html>

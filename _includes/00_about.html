@@ -1,0 +1,99 @@
+<header class="intro">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="grid-2-columns" style="margin-top: 20px">
+                        <div>
+                            <img src="results/search_map.svg" style="width: 90%;">
+                            <!-- <a href="https://yu-group.github.io/covid19-dashboard/results/search.html" target="_blank"><img src="results/search_map.svg" style="width: 90%;"></a> -->
+                            <!-- <a type="button" class="btn btn-primary" style="margin-bottom: 30px; margin-right: 10px; margin-top: 10px" href="https://yu-group.github.io/covid19-dashboard/results/search.html" target="_blank">View interactive dashboard</a>
+                            <p style="text-align: center"> In-depth look at
+                        COVID-19 in counties across the US. </p> -->
+                        </div>
+                        <div>
+                            <img src="assets/matching.svg" style="width: 90%;">
+                            <!-- <a href="http://54.148.200.200:8050/" target="_blank"><img src="assets/matching.svg" style="width: 90%;"></a> -->
+                            <!-- <a type="button" class="btn btn-primary" style="margin-bottom: 30px; margin-right: 10px; margin-top: 10px" href="http://54.148.200.200:8050/" target="_blank">Find similar counties</a>
+                            <p style="text-align: center;"> Find and compare similar counties based on different attributes. </p> -->
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+
+                        <p style="margin-top: 30px">
+                            Starting in March 2020, <a href="https://www.stat.berkeley.edu/~yugroup/people.html">the Yu Group </a> at UC
+                            Berkeley Statistics / EECS / CCB worked to help forecast the severity of the epidemic for individual counties and
+                            hospitals in the US. We developed interpretable models (updated daily until May 2021) and
+                            curated data to predict the trajectory of COVID-19-related deaths.
+                            This website provides an archive of that project.
+                            We collaborated with <a href="https://github.com/response4life">Response4Life</a>
+                            to blunt the effect of COVID-19 through the production
+                            and appropriate distribution of PPE, medical equipment, and medical personnel to healthcare
+                            facilities across the United States.
+                        </p>
+
+                        <p style="margin-top: 10px">
+                            We also provided hospital-level predictions via a
+                            now-retired website where one could upload data for a
+                            specific hospital and download prediction results
+                            for the given hospital. The uploaded data waqs only
+                            be temporarily used for prediction and was never
+                            collected.
+                        </p>
+
+                        <div align="center" style="margin-top: 30px">
+                            <a type="button" class="btn btn-primary" style="margin-bottom: 30px; margin-right: 10px;"
+                               href="https://github.com/Yu-Group/covid19-severity-prediction/">Github</a>
+                            <a type="button" class="btn btn-success" style="margin-bottom: 30px; margin-right: 10px;"
+                               href="https://hdsr.mitpress.mit.edu/pub/p6isyf0g">HDSR paper</a>
+                            <a type="button" class="btn btn-info" style="margin-bottom: 30px;" href="/assets/blog">Blog
+                                post</a>
+                            <a type="button" class="btn btn-info" style="margin-bottom: 30px;" href="/assets/covid_website_writeup.pdf">Website description</a>
+                        </div>
+                        <!--<p style="margin-top: 10px">
+                            For hospital level prediction, please go to our<a href="http://54.148.200.200:5000/"> hospitalization prediction website </a> where one can upload data for a specific hospital and download prediction results for the given hospital. The uploaded data will only be temporarily used for prediction and will not be collected.
+                </p> -->
+
+                        <div class="model-box">
+                            <iframe class="model"
+                                    src="https://docs.google.com/presentation/d/e/2PACX-1vRXKvNYDYm00f9EQHDMzMfs9n4otYEklUThbACGof0hEQLtJvrEn33mcRXPb3w8b9BKOawGnfl77Yfg/embed?start=false&loop=false&delayms=3000"
+                                    frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+
+                        <a href="#data" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+<style>
+    .model-box {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 66.6%; /* This is your aspect ratio */
+    }
+
+    .model {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%
+    }
+</style>
